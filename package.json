@@ -7,8 +7,8 @@
 	"private": true,
 	"type": "module",
 	"scripts": {
-		"dev": "wrangler dev",
-		"deploy": "wrangler publish",
+		"dev": "npx wrangler dev",
+		"deploy": "npx wrangler publish",
 		"register:command": "node scripts/registerCommand",
 		"register:metadata": "node scripts/registerMetadata"
 	}
