@@ -1,0 +1,8 @@
+name = "discord"
+main = "src/index.js"
+compatibility_date = "2023-01-18"
+
+[[kv_namespaces]]
+binding = "KV"
+id = "a7e88652871649bda9cc8683a7ad74ba"
+preview_id = "4efe0233e8eb414e840002b84d2dcc98"

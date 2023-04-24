@@ -1,0 +1,15 @@
+{
+	"name": "discord",
+	"version": "0.0.0",
+	"devDependencies": {
+		"wrangler": "2.8.0"
+	},
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"dev": "wrangler dev",
+		"deploy": "wrangler publish",
+		"register:command": "node scripts/registerCommand",
+		"register:metadata": "node scripts/registerMetadata"
+	}
+}
