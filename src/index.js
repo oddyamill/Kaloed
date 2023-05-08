@@ -71,6 +71,13 @@ export default {
 				}
 			}
 
+			case 'GET/kal': {
+				const userId = url.searchParams.get('user_id');
+				if (!userId) return emptyResponse({ status: 400 });
+
+				return jsonResponse(await getKal(userId, env))
+			}
+
 			default:
 				return emptyResponse({ status: 404 });
 		}
