@@ -1,0 +1,43 @@
+{
+	"commands": {
+		"invite": {
+			"description": "Add kaloed to your server"
+		},
+		"kal": {
+			"description": "kal =/",
+			"options": [
+				{
+					"description": "eat poop",
+					"name": "eat"
+				},
+				{
+					"description": "prestige",
+					"name": "prestige"
+				}
+			]
+		},
+		"kaloed": {
+			"description": "kaloed"
+		},
+		"kaloedstvo": {
+			"name": "poopism"
+		}
+	},
+	"replies": {
+		"no": "no",
+		"remind": "remind me",
+		"invalid": "go chew poop haha loser",
+		"remindCreated": "reminder created, wait it will come someday",
+		"remindFail": "can't create DM, open it",
+		"kal.cooldown": "cooldown. wait. you can eat poop treat again after {0}",
+		"kal.eat.success": "you ate poop, you have eaten a total of {0}\nyou can eat poop again after {1}",
+		"kal.eat.canPrestige": "you can prestige now",
+		"kal.eat.prestigeRemain": "until prestige: {0} poops",
+		"kal.prestige.max": "all done, maximum {0} prestiges",
+		"kal.prestige.invalid": "you need {0} poops to prestige, go collect them",
+		"kal.prestige.success": "prestige done, now {0} prestiges in total\nby the way, you can eat poop again after {1}",
+		"kaloed.success": "leave her alone, command at the resort.",
+		"kaloedstvo.botCantEatKal": "this bot bots cannot eat poop because.",
+		"kaloedstvo.success": "oh wow {0} ate a lot of poop even {1}"
+	}
+}

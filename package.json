@@ -2,6 +2,7 @@
 	"name": "discord",
 	"version": "0.0.0",
 	"devDependencies": {
+		"eslint": "^8.42.0",
 		"wrangler": "2.8.0"
 	},
 	"private": true,
@@ -10,6 +11,8 @@
 		"dev": "npx wrangler dev",
 		"deploy": "npx wrangler publish",
 		"register:command": "node scripts/registerCommand",
-		"register:metadata": "node scripts/registerMetadata"
+		"register:metadata": "node scripts/registerMetadata",
+		"lint": "npx eslint src/",
+		"lint:fix": "npx eslint src/ --fix"
 	}
 }

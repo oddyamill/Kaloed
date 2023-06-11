@@ -7,7 +7,7 @@ export async function getKal(userId, env) {
 		kal: value?.kal ?? 0,
 		prestigeLevel: value?.prestigeLevel ?? 0,
 		coolDown: metadata?.coolDown ?? 0
-	}
+	};
 }
 
 export async function updateKal(userId, kal, prestigeLevel, coolDown, env, ctx) {

@@ -6,7 +6,7 @@ export const interactionType = {
 	MessageComponent: 3,
 	ApplicationCommandAutocomplete: 4,
 	ModalSumbit: 5
-}
+};
 
 export const interactionResponseType = {
 	Pong: 1,
@@ -16,7 +16,7 @@ export const interactionResponseType = {
 	UpdateMessage: 7,
 	ApplicationCommandAutocompleteResult: 8,
 	Modal: 9
-}
+};
 
 export const componentType = {
 	ActionRow: 1,
@@ -27,15 +27,15 @@ export const componentType = {
 	RoleSelect: 6,
 	MentionableSelect: 7,
 	ChannelSelect: 8
-}
+};
 
 export const buttonStyle = {
-	primary: 1,
-	secondary: 2,
-	success: 3,
-	danger: 4,
-	link: 5
-}
+	Primary: 1,
+	Secondary: 2,
+	Success: 3,
+	Danger: 4,
+	Link: 5
+};
 
 async function _fetch(path, options) {
 	const response = await fetch(`${apiEndpoint}${path}`, options);
@@ -81,21 +81,6 @@ export async function refreshOauthToken(refreshToken, env) {
 			refresh_token: refreshToken
 		})
 	});
-}
-
-export async function revokeToken(data, accessToken, env) {
-	return _fetch('/oauth2/token/revoke', {
-		method: 'POST',
-		headers: {
-			'Authorization': accessToken,
-			'Content-Type': 'application/x-www-form-urlencoded'
-		},
-		body: new URLSearchParams({
-			client_id: env.DISCORD_OAUTH2_CLIENT_ID,
-			client_secret: env.DISCORD_OAUTH2_CLIENT_SECRET,
-			token: data.access_token
-		})
-	})
 }
 
 export async function getAccessToken(userId, env) {

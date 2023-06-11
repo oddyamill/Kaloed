@@ -2,12 +2,12 @@ import { interactionResponseType } from '../utils/';
 
 export default {
 	name: 'kaloed',
-	async handle() {
+	async handle(t) {
 		return {
 			type: interactionResponseType.ChannelMessageWithSource,
 			data: {
-				content: `команда на курорте отстань от неё`,
+				content: t('kaloed.success'),
 			}
-		}
+		};
 	}
-}
+};

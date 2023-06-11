@@ -1,0 +1,22 @@
+[
+	{
+		"name": "invite",
+		"type": 1
+	}, 
+	{
+		"name": "kal",
+		"type": 1, 
+		"options": [
+			{ "type": 1, "name": "eat" },
+			{ "type": 1, "name": "prestige" }
+		]
+	},
+	{
+		"name": "kaloed",
+		"type": 1
+	},
+	{
+		"name": "kaloedstvo",
+		"type": 2
+	}
+]

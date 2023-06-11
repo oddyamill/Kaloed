@@ -3,5 +3,6 @@ export function emptyResponse(init) {
 }
 
 export function jsonResponse(body) {
+	// может потом сделать Response.json просто зачем это говно
 	return new Response(JSON.stringify(body), { headers: { 'Content-Type': 'application/json' } });
 }

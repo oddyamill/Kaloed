@@ -3,5 +3,6 @@ export * from './constants.js';
 export * from './discord.js';
 export * from './kaneki.js';
 export * from './kv.js';
+export * from './localization.js';
 export * from './response.js';
 export * from './verify.js';

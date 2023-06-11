@@ -2,7 +2,7 @@ import { getKal, interactionResponseType } from '../utils/';
 
 export default {
 	name: 'kaloedstvo',
-	async handle(interaction, env) {
+	async handle(t, interaction, env) {
 		const user = interaction.data.resolved.users[interaction.data.target_id];
 
 		if (user.bot) {
@@ -12,7 +12,7 @@ export default {
 					content: 'это бот боты не могут кал кушать потому что',
 					flags: 64
 				}
-			}
+			};
 		}
 
 		const { kal } = await getKal(user.id, env);
@@ -20,8 +20,8 @@ export default {
 		return {
 			type: interactionResponseType.ChannelMessageWithSource,
 			data: {
-				content: `ого вау ${user.username} скушал кала много аж ${kal}`
+				content: t('kaloedstvo.success', user.username, kal)
 			}
-		}
+		};
 	}
-}
+};
